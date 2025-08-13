@@ -317,6 +317,12 @@ abstract class NavigationDrawerActivity :
                     openStatistics()
                 }
 
+                R.id.nav_articles -> {
+                    Timber.i("Navigating to articles")
+                    val intent = com.ichi2.anki.pages.ArticlesFragment.getIntent(this@NavigationDrawerActivity)
+                    startActivity(intent)
+                }
+
                 R.id.nav_settings -> {
                     Timber.i("Navigating to settings")
                     openSettings()

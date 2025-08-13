@@ -137,6 +137,7 @@ fun isSvelteKitPage(path: String): Boolean {
         "import-anki-package",
         "import-csv",
         "import-page",
+        "articles",
         "image-occlusion" -> true
         else -> false
     }
