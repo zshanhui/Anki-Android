@@ -26,6 +26,13 @@ class ArticlesFragment : Fragment(R.layout.page_fragment) {
             settings.builtInZoomControls = true
             settings.setSupportZoom(true)
             webViewClient = WebViewClient()
+            // Ensure text is laid out for readability
+            settings.loadWithOverviewMode = true
+            settings.useWideViewPort = true
+            settings.textZoom = 115
+            settings.defaultTextEncodingName = "utf-8"
+            settings.loadsImagesAutomatically = true
+            settings.domStorageEnabled = true
             loadUrl(ASSET_URL)
         }
 
